@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="bg-yellow-400 w-1/2 p-4 flex flex-col space-y-3 mx-auto justify-center items-center mt-4"
+    >
+      <h1 class="text-3xl font-bold" data-th-text="${name}">
+        Welcome to home page
+      </h1>
+      <a th:href="${youtube}">Click here to open my channel</a>
+      <p class="text-xl text-gray-700">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
+        iusto voluptate, atque ut nostrum unde maiores voluptatem quibusdam odio
+        molestiae aut dolorum corporis et, porro neque, praesentium fugiat
+        laboriosam.
+      </p>
+      <div>
+        <button
+          class="px-3 py-2 rounded bg-blue-500 text-white hover:bg-blue-600"
+        >
+          Click here
+        </button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  </body>
+</html>
